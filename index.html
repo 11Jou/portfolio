@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Youssef Mohamed - Software Engineer Portfolio"
+    />
+    <title>Youssef Mohamed - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-brand">YM</div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-name">Youssef Mohamed</h1>
+          <p>
+            Software Engineer with over 2 years of experience in full-stack
+            development and system administration, specializing in designing and
+            deploying scalable applications using Django, Spring Boot, and
+            React. Demonstrates strong ability to manage backend systems and
+            network infrastructure, effectively bridging software engineering
+            and IT operations to deliver reliable and high-performance
+            solutions.
+          </p>
+          <br />
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-date">2023 - Present</div>
+            <div class="experience-content">
+              <h3>Software Engineer</h3>
+              <h4>Freelancer</h4>
+              <ul class="experience-list">
+                <li>
+                  Collaborate closely with clients to understand their needs and
+                  deliver high-quality, scalable solutions
+                </li>
+                <li>
+                  Gather and analyze feature requirements to ensure alignment
+                  with client objectives
+                </li>
+                <li>
+                  Plan and manage project timelines to ensure timely delivery of
+                  milestones
+                </li>
+                <li>
+                  Coordinate with development teams to ensure smooth execution
+                  and quality standards
+                </li>
+                <li>
+                  Maintain continuous communication with clients to provide
+                  progress updates and address concerns
+                </li>
+                <li>
+                  Incorporate feedback and ensure final deliverables meet
+                  business goals and technical standards
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-date">2024 - Present</div>
+            <div class="experience-content">
+              <h3>Information Technology Engineer</h3>
+              <h4>WOTECH</h4>
+              <ul class="experience-list">
+                <li>
+                  Managed and maintained network and server infrastructure to
+                  ensure high availability, security, and performance.
+                </li>
+                <li>
+                  Administered storage and backup solutions to protect data
+                  integrity.
+                </li>
+                <li>
+                  Administered Active Directory, managing users, groups,
+                  permissions, and security policies.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Libraries</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">Django</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects will be loaded dynamically from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal">
+      <div class="modal-overlay" id="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close" aria-label="Close modal">
+          &times;
+        </button>
+        <div class="modal-body" id="modal-body">
+          <!-- Modal content will be populated dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+          <div class="education-card">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <h4>University Name</h4>
+            <p class="education-date">2014 - 2018</p>
+            <p>
+              Focused on software engineering, algorithms, data structures, and
+              database systems.
+            </p>
+          </div>
+          <div class="education-card">
+            <h3>AWS Certified Solutions Architect</h3>
+            <h4>Amazon Web Services</h4>
+            <p class="education-date">2021</p>
+            <p>Certified in designing and deploying scalable systems on AWS.</p>
+          </div>
+          <div class="education-card">
+            <h3>Full Stack Web Development</h3>
+            <h4>Online Course Platform</h4>
+            <p class="education-date">2019</p>
+            <p>
+              Comprehensive course covering modern web development technologies
+              and best practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <strong>Email:</strong>
+              <a href="mailto:youssef.mohamed@example.com"
+                >youssef.mohamed@example.com</a
+              >
+            </div>
+            <div class="contact-item">
+              <strong>Phone:</strong>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+            <div class="social-links">
+              <a
+                href="#"
+                class="social-link"
+                target="_blank"
+                aria-label="LinkedIn"
+                >LinkedIn</a
+              >
+              <a
+                href="#"
+                class="social-link"
+                target="_blank"
+                aria-label="GitHub"
+                >GitHub</a
+              >
+              <a
+                href="#"
+                class="social-link"
+                target="_blank"
+                aria-label="Twitter"
+                >Twitter</a
+              >
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Youssef Mohamed. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

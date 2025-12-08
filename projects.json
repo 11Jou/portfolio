@@ -1,0 +1,66 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Braille Learn Platform",
+      "shortDescription": "Braille-learn platform for Auq Basry Association, this platform is designed to assist visually impaired and blind individuals in learning Braille in both Arabic and English.",
+      "fullDescription": "Braille-learn platform for Auq Basry Association. This comprehensive platform is designed to assist visually impaired and blind individuals in learning Braille in both Arabic and English. The platform provides extensive support including screen reading assistance, braille input support, guidance on utilizing devices like Perkins machines, and a complete learning journey for students. The system features interactive lessons, progress tracking, and adaptive learning paths tailored to individual student needs.",
+      "startDate": "2024-01",
+      "endDate": "2024-06",
+      "technologies": [
+        "React",
+        "Django",
+        "PostgreSQL",
+        "REST APIs",
+        "Accessibility Tools"
+      ],
+      "githubLink": "#",
+      "demoLink": "#"
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "shortDescription": "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      "fullDescription": "A comprehensive collaborative task management application designed for teams to efficiently manage projects and tasks. Features include real-time updates using WebSocket technology, intuitive drag-and-drop functionality for task organization, team collaboration tools, file sharing, deadline tracking, and progress visualization. The application supports multiple project views including Kanban boards, Gantt charts, and list views.",
+      "startDate": "2023-08",
+      "endDate": "2023-12",
+      "technologies": [
+        "Vue.js",
+        "Express",
+        "PostgreSQL",
+        "WebSocket",
+        "Node.js"
+      ],
+      "githubLink": "#",
+      "demoLink": "#"
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "shortDescription": "Real-time weather dashboard with location-based forecasts, interactive maps, and weather alerts.",
+      "fullDescription": "A modern weather dashboard application providing real-time weather information and forecasts. The platform features location-based weather data, interactive maps with weather overlays, detailed forecasts for multiple days, weather alerts and notifications, historical weather data visualization, and customizable widgets. Built with responsive design to work seamlessly across all devices.",
+      "startDate": "2023-05",
+      "endDate": "2023-07",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "OpenWeather API",
+        "Chart.js",
+        "Leaflet"
+      ],
+      "githubLink": "#",
+      "demoLink": "#"
+    },
+    {
+      "id": 4,
+      "title": "Social Media Analytics",
+      "shortDescription": "Analytics platform for social media metrics with data visualization, trend analysis, and reporting features.",
+      "fullDescription": "An advanced analytics platform for social media metrics and insights. The application provides comprehensive data visualization through interactive charts and graphs, trend analysis across multiple social media platforms, automated reporting with customizable templates, engagement metrics tracking, audience demographics analysis, and competitive benchmarking. The platform supports integration with major social media APIs and provides real-time data updates.",
+      "startDate": "2023-02",
+      "endDate": "2023-04",
+      "technologies": ["Next.js", "Python", "Django", "D3.js", "PostgreSQL"],
+      "githubLink": "#",
+      "demoLink": "#"
+    }
+  ]
+}
