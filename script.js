@@ -282,6 +282,7 @@ const projectsDataJSON = {
                 "S3",
                 "Apache",
             ],
+            "status": "production",
             "demoLink": "https://braille-learn.com"
         },
         {
@@ -291,6 +292,7 @@ const projectsDataJSON = {
             "description": "Braille Dot is a desktop application designed to translate and print Braille documents using supported Braille embosser machines. It is built for organizations and associations that specialize in producing Braille materials, helping them streamline and simplify the Braille printing process.",
             "startDate": "2025-05",
             "endDate": "2025-11",
+            "status": "production",
             "technologies": [
                 "C#",
                 ".NET",
@@ -320,28 +322,31 @@ const projectsDataJSON = {
                 "Google Maps API",
                 "Docker",
                 "Hostinger VPS",
-                "Apache",   
+                "Apache",
             ],
+            "status": "completed",
             "demoLink": "https://mubsiroun.my.canva.site/saudi-green-tester"
         },
         {
             "id": 4,
             "title": "Digital Immunity Website",
             "image": "images/logo.png",
-            "description": "Digital Immunity is a website designed to provide information and resources about the digital immunity company. a cybersafe company that provides security solutions and services to businesses and individuals.",
+            "description": "Digital Immunity is a website designed to provide information and resources about the digital immunity company.",
             "startDate": "2025-11",
             "endDate": "2025-12",
-            "technologies": ["Django", "HTML", "CSS", "JavaScript", "sqlite","Google Recaptcha", "Hostinger VPS", "Nginx"],
+            "technologies": ["Django", "HTML", "CSS", "JavaScript", "sqlite", "Google Recaptcha", "Hostinger VPS", "Nginx"],
+            "status": "production",
             "demoLink": "https://digital-immunity.io"
         },
         {
             "id": 5,
-            "title": "Trading Education Academy",
+            "title": "Trading Academy",
             "image": "images/no.png",
             "description": "Web application for a trading education academy, offering personalized dashboards for users to track sales performance, progress, and rankings.",
             "startDate": "2024-01",
             "endDate": "2024-03",
-            "technologies": ["Django", "HTML", "CSS", "JavaScript", "Mysql","Digital Ocean App Platform"],
+            "technologies": ["Django", "HTML", "CSS", "JavaScript", "Mysql", "Digital Ocean App Platform"],
+            "status": "completed",
             "demoLink": "#"
         }
     ]
@@ -353,6 +358,30 @@ function formatDate(dateString) {
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'];
     return `${monthNames[parseInt(month) - 1]} ${year}`;
+}
+
+// Format status badge
+function getStatusBadge(status) {
+    if (!status) return '';
+
+    const statusLower = status.toLowerCase().trim();
+    let statusClass = 'status-';
+    let statusText = status;
+
+    if (statusLower === 'under dev' || statusLower === 'under development' || statusLower === 'development') {
+        statusClass += 'under-dev';
+        statusText = 'Under Development';
+    } else if (statusLower === 'completed' || statusLower === 'done' || statusLower === 'finished') {
+        statusClass += 'completed';
+        statusText = 'Completed';
+    } else if (statusLower === 'production' || statusLower === 'live' || statusLower === 'deployed') {
+        statusClass += 'production';
+        statusText = 'Production';
+    } else {
+        statusClass += 'default';
+    }
+
+    return `<span class="project-status ${statusClass}">${statusText}</span>`;
 }
 
 // Load projects from embedded data
@@ -376,6 +405,7 @@ function renderProjects() {
         projectCard.innerHTML = `
             ${project.image ? `<div class="project-image-container"><img src="${project.image}" alt="${project.title}" class="project-image" onerror="this.style.display='none'"></div>` : ''}
             <h3>${project.title}</h3>
+            ${getStatusBadge(project.status)}
             <p>${project.description}</p>
             <div class="project-date">
                 <span>${formatDate(project.startDate)}</span>
@@ -410,6 +440,7 @@ function openModal(projectId) {
 
     modalBody.innerHTML = `
         <h2>${project.title}</h2>
+        ${getStatusBadge(project.status)}
         <div class="modal-date">${formatDate(project.startDate)} - ${formatDate(project.endDate)}</div>
         <div class="modal-description">${project.description}</div>
         <div class="modal-tech">
