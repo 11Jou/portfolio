@@ -203,6 +203,26 @@ body {
     box-shadow: 0 10px 20px var(--shadow-lg);
 }
 
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px var(--shadow-lg);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -738,97 +758,101 @@ section {
     background-color: var(--bg-secondary);
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
-    max-width: 1000px;
+    flex-wrap: wrap;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
-.contact-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: var(--text-primary);
-}
-
-.contact-item {
-    margin-bottom: 1.5rem;
-    color: var(--text-secondary);
-}
-
-.contact-item strong {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-.contact-item a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-.social-links {
+.contact-icon {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
-}
-
-.social-link {
-    padding: 0.5rem 1rem;
+    padding: 2rem;
     background-color: var(--bg-primary);
-    color: var(--primary-color);
+    border-radius: 16px;
     text-decoration: none;
-    border-radius: 6px;
-    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    transition: var(--transition);
+    box-shadow: 0 4px 6px var(--shadow);
+    min-width: 150px;
+}
+
+.contact-icon:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px var(--shadow-lg);
+}
+
+.contact-icon .icon-svg {
+    width: 64px;
+    height: 64px;
+    fill: var(--primary-color);
     transition: var(--transition);
 }
 
-.social-link:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
+.contact-icon:hover .icon-svg {
+    transform: scale(1.1);
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+.contact-icon span {
+    font-size: 1.1rem;
+    font-weight: 600;
     color: var(--text-primary);
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 0.875rem;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: inherit;
-    font-size: 1rem;
     transition: var(--transition);
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+.contact-icon:hover span {
+    color: var(--primary-color);
+}
+
+/* Gmail specific hover color */
+.contact-icon[aria-label="Gmail"]:hover .icon-svg {
+    fill: #ea4335;
+}
+
+.contact-icon[aria-label="Gmail"]:hover span {
+    color: #ea4335;
+}
+
+/* WhatsApp specific hover color */
+.contact-icon[aria-label="WhatsApp"]:hover .icon-svg {
+    fill: #25d366;
+}
+
+.contact-icon[aria-label="WhatsApp"]:hover span {
+    color: #25d366;
+}
+
+/* LinkedIn specific hover color */
+.contact-icon[aria-label="LinkedIn"]:hover .icon-svg {
+    fill: #0077b5;
+}
+
+.contact-icon[aria-label="LinkedIn"]:hover span {
+    color: #0077b5;
+}
+
+@media (max-width: 768px) {
+    .contact-icons {
+        gap: 2rem;
+    }
+    
+    .contact-icon {
+        min-width: 120px;
+        padding: 1.5rem;
+    }
+    
+    .contact-icon .icon-svg {
+        width: 48px;
+        height: 48px;
+    }
 }
 
 /* Footer */

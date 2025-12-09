@@ -122,46 +122,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Contact Form Handling
-const contactForm = document.getElementById('contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form values
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value
-    };
-
-    // In a real application, you would send this data to a server
-    // For now, we'll just show a success message
-    console.log('Form submitted:', formData);
-
-    // Show success message
-    const successMessage = document.createElement('div');
-    successMessage.textContent = 'Thank you for your message! I\'ll get back to you soon.';
-    successMessage.style.cssText = `
-        background-color: var(--primary-color);
-        color: white;
-        padding: 1rem;
-        border-radius: 8px;
-        margin-top: 1rem;
-        text-align: center;
-        animation: fadeInUp 0.5s ease;
-    `;
-
-    contactForm.appendChild(successMessage);
-
-    // Reset form
-    contactForm.reset();
-
-    // Remove success message after 5 seconds
-    setTimeout(() => {
-        successMessage.remove();
-    }, 5000);
-});
 
 // Intersection Observer for Fade-in Animations
 const observerOptions = {
@@ -329,6 +289,17 @@ const projectsDataJSON = {
         },
         {
             "id": 4,
+            "title": "LocalLucci Dashboard",
+            "image": "images/no.png",
+            "description": "Dashboard for LocalLucci App, offering personalized dashboards for admin to track sales performance for each vendors, oders, transactions, and vendor control center",
+            "startDate": "2025-12",
+            "endDate": "Present",
+            "technologies": ["Django", "HTML", "CSS", "JavaScript", "Mysql", "Digital Ocean App Platform"],
+            "status": "Under Development",
+            "demoLink": "#"
+        },
+        {
+            "id": 5,
             "title": "Digital Immunity Website",
             "image": "images/logo.png",
             "description": "Digital Immunity is a website designed to provide information and resources about the digital immunity company.",
@@ -339,7 +310,7 @@ const projectsDataJSON = {
             "demoLink": "https://digital-immunity.io"
         },
         {
-            "id": 5,
+            "id": 6,
             "title": "Trading Academy",
             "image": "images/no.png",
             "description": "Web application for a trading education academy, offering personalized dashboards for users to track sales performance, progress, and rankings.",
@@ -348,12 +319,15 @@ const projectsDataJSON = {
             "technologies": ["Django", "HTML", "CSS", "JavaScript", "Mysql", "Digital Ocean App Platform"],
             "status": "completed",
             "demoLink": "#"
-        }
+        },
     ]
 };
 
 // Format date from YYYY-MM to readable format
 function formatDate(dateString) {
+    if (dateString === 'Present') {
+        return dateString;
+    }
     const [year, month] = dateString.split('-');
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'];
@@ -477,4 +451,5 @@ document.addEventListener('keydown', (e) => {
 
 // Load projects when page loads
 loadProjects();
+
 
