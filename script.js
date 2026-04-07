@@ -289,17 +289,28 @@ const projectsDataJSON = {
         },
         {
             "id": 4,
-            "title": "LocalLucci Dashboard",
+            "title": "Localucci Dashboard",
             "image": "images/no.png",
-            "description": "Dashboard for LocalLucci App, offering personalized dashboards for admin to track sales performance for each vendors, oders, transactions, and vendor control center",
+            "description": "Dashboard for Localucci App, offering personalized dashboards for admin to track sales performance for each vendors, oders, transactions, and vendor control center",
             "startDate": "2025-12",
             "endDate": "Present",
-            "technologies": ["Django", "HTML", "CSS", "JavaScript", "Mysql", "Digital Ocean App Platform"],
+            "technologies": ["React", "Tailwind CSS", "TypeScript", "Redux"],
             "status": "Under Development",
             "demoLink": "#"
         },
         {
             "id": 5,
+            "title": "Localucci Client Website",
+            "image": "images/no.png",
+            "description": "Client Website for Localucci App, offering a clean and modern website for the client to showcase their products and brands, make orders, and track their orders",
+            "startDate": "2025-3",
+            "endDate": "Present",
+            "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "React", "Redux"],
+            "status": "Under Development",
+            "demoLink": "#"
+        },
+        {
+            "id": 6,
             "title": "Digital Immunity Website",
             "image": "images/logo.png",
             "description": "Digital Immunity is a website designed to provide information and resources about the digital immunity company.",
@@ -310,7 +321,7 @@ const projectsDataJSON = {
             "demoLink": "https://digital-immunity.io"
         },
         {
-            "id": 6,
+            "id": 7,
             "title": "Trading Academy",
             "image": "images/no.png",
             "description": "Web application for a trading education academy, offering personalized dashboards for users to track sales performance, progress, and rankings.",
@@ -323,7 +334,6 @@ const projectsDataJSON = {
     ]
 };
 
-// Format date from YYYY-MM to readable format
 function formatDate(dateString) {
     if (dateString === 'Present') {
         return dateString;
