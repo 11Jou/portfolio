@@ -222,6 +222,24 @@ const projectsDataJSON = {
     "projects": [
         {
             "id": 1,
+            "title": "Fart Alharaka Association",
+            "image": "images/logo.jpeg",
+            "description": "website for Fart Alharaka Association one of the oldest associations in Saudi Arabia, it is designed to provide a platform for the association to manage their activities , events , news and it's services",
+            "startDate": "2026-05",
+            "endDate": "2026-06",
+            "technologies": [
+                "Laravel",
+                "Filament",
+                "Tailwind CSS",
+                "Sqlite",
+                "Hostinger VPS",
+                "Apache",
+            ],
+            "status": "production",
+            "demoLink": "https://fartalharaka.org/"
+        },
+        {
+            "id": 2,
             "title": "Braille Learn Platform",
             "image": "images/braille.svg",
             "description": "Braille-learn platform for Auq Basry Association, this platform is designed to assist visually impaired and blind individuals in learning Braille in both Arabic and English. The platform provides comprehensive support, including screen reading assistance, braille input support, guidance on utilizing devices like Perkins machines, and a complete learning journey for students.",
@@ -246,7 +264,7 @@ const projectsDataJSON = {
             "demoLink": "https://braille-learn.com"
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "Braille Dot Desktop App",
             "image": "images/Braille-Logo.png",
             "description": "Braille Dot is a desktop application designed to translate and print Braille documents using supported Braille embosser machines. It is built for organizations and associations that specialize in producing Braille materials, helping them streamline and simplify the Braille printing process.",
@@ -264,7 +282,7 @@ const projectsDataJSON = {
             "demoLink": "https://braille-dot.com"
         },
         {
-            "id": 3,
+            "id": 4,
             "title": "Green Saudi",
             "image": "images/green.png",
 
@@ -288,7 +306,7 @@ const projectsDataJSON = {
             "demoLink": "https://mubsiroun.my.canva.site/saudi-green-tester"
         },
         {
-            "id": 4,
+            "id": 5,
             "title": "Localucci Dashboard",
             "image": "images/no.png",
             "description": "Dashboard for Localucci App, offering personalized dashboards for admin to track sales performance for each vendors, oders, transactions, and vendor control center",
@@ -299,7 +317,7 @@ const projectsDataJSON = {
             "demoLink": "#"
         },
         {
-            "id": 5,
+            "id": 6,
             "title": "Localucci Client Website",
             "image": "images/no.png",
             "description": "Client Website for Localucci App, offering a clean and modern website for the client to showcase their products and brands, make orders, and track their orders",
@@ -310,7 +328,7 @@ const projectsDataJSON = {
             "demoLink": "#"
         },
         {
-            "id": 6,
+            "id": 7,
             "title": "Digital Immunity Website",
             "image": "images/logo.png",
             "description": "Digital Immunity is a website designed to provide information and resources about the digital immunity company.",
@@ -321,7 +339,7 @@ const projectsDataJSON = {
             "demoLink": "https://digital-immunity.io"
         },
         {
-            "id": 7,
+            "id": 8,
             "title": "Trading Academy",
             "image": "images/no.png",
             "description": "Web application for a trading education academy, offering personalized dashboards for users to track sales performance, progress, and rankings.",
